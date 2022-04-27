@@ -1,0 +1,22 @@
+{
+  "name": "@jin_long/shared",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.cjs",
+  "module": "dist/index.cjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rollup -c rollup.config.js "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@jin_long/prettier_rc": "^1.0.2",
+    "@rollup/plugin-typescript": "^8.3.2",
+    "@ujl/prettierrc": "^1.0.1",
+    "rollup": ">=2.14.0 <3.0.0",
+    "tslib": "^2.4.0",
+    "typescript": "^4.6.3"
+  }
+}
