@@ -32,7 +32,7 @@ git add . &&
   read a
 #
 clear
-echo 'input comment'
+print_tip 'input comment'
 
 read comment
 
@@ -41,4 +41,9 @@ if ["$comment" -eq ""]; then
   exit 0
 fi
 git commit -m "${comment?:'comment is necessary'}" &&
-  print_tip 'putsh sucess'
+  print_tip 'commit sucess'
+#
+print_tip 'push to remote?'
+read a
+clear
+git push
