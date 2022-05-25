@@ -50,5 +50,6 @@ show_status() {
   confirm_next_step 'add to HEAD'
   add_to_head
   confirm_next_step 'push to remote'
+  echo 'start'
   git push
 }
