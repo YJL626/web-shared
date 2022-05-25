@@ -1,3 +1,4 @@
+#!/bin/bash
 #utils
 print_tip() {
   count=${2:-20}
@@ -50,6 +51,6 @@ show_status() {
   confirm_next_step 'add to HEAD'
   add_to_head
   confirm_next_step 'push to remote'
-  echo 'start'
+  echo '>>>>>>>'
   git push
 }
