@@ -1,4 +1,4 @@
-export default {
+export const prettierrc = {
   printWidth: 80,
   semi: false,
   singleQuote: true,
