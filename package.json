@@ -1,9 +1,8 @@
 {
   "name": "@ujl/shared",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "dist/main.cjs",
-  "module": "dist/main.mjs",
   "types": "dist/main.d.ts",
   "files": [
     "dist",
@@ -11,12 +10,8 @@
   ],
   "exports": {
     ".": {
-      "import": {
-        "node": "./dist/main.mjs",
-        "default": "./dist/main.mjs"
-      },
-      "require": "./dist/main.cjs",
-      "types": "./dist/main.d.ts"
+      "import": "./dist/main.mjs",
+      "require": "./dist/main.cjs"
     }
   },
   "scripts": {
