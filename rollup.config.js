@@ -1,5 +1,6 @@
 import typescript from '@rollup/plugin-typescript'
 import dts from 'rollup-plugin-dts'
+import { babel, getBabelOutputPlugin } from '@rollup/plugin-babel'
 
 export default [
   {
@@ -14,7 +15,12 @@ export default [
         format: 'esm',
       },
     ],
-    plugins: [typescript({ tsconfig: './tsconfig.json' })],
+    plugins: [
+      typescript({ tsconfig: './tsconfig.json' }),
+      getBabelOutputPlugin({
+        presets: ['@babel/preset-env'],
+      }),
+    ],
   },
   {
     input: 'dist/types/main.d.ts',
